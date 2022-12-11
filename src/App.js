@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import AlbumView from './components/AlbumView'
@@ -35,7 +36,7 @@ function App() {
 	}
 
 	return (
-		<div>
+		<div className="App">
 			{message}
 			<Router>
 				<Routes>
